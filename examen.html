@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>Estudiantes Armando Ramos Corona y Torres Vazquez Harvey Ariel </title>
+<head>
+
+    <script>
+        var nombreR = prompt("Ingresa el nombre de la persona quien reserva ");
+        let nombres = [];
+
+        var fecha = prompt("Ingresa la fecha de reserva ");
+        let fechas = [];
+
+        var status = prompt("Ingresa el status de la reserva  si/no");
+        let statu = [];
+
+        var x = 2;
+        var y = 3;
+        var mesaOcupada = 4;
+        var l = 5;
+        var m = 6;
+
+
+        console.log(reserva());
+
+
+
+        function reserva() {
+
+            nombres.push(nombreR);
+            console.log("El nombre de quien reservo: " + nombres);
+            fechas.push(fecha);
+            console.log("La fecha de reserva: " + fechas);
+            statu.push(status);
+            console.log("El status de la reserva: " + statu);
+
+            var mesaDisponible = 1;
+
+            if (status == "si") {
+                return "Reserva realizada!! , con exito su mesa sera la:  " + mesaDisponible;
+            } else {
+
+                return "Reserva no realizada, no tenemos mesas descoupadas";
+            }
+            return [nombreR, fecha, status];
+
+
+        }
+        var reservacion2 = ["juan " + "mesa ", x + "fecha de la reserva ", " 12 / 21 / 2021" + " status de la reserva " + " si"];
+        var reservacion3 = ["pedro " + "mesa ", y + "fecha de la reserva ", " 12 / 21 / 2021" + " status de la reserva " + " si"];
+        var reservacion4 = ["jose " + "mesa ", mesaOcupada + "fecha de la reserva ", " 12 / 21 / 2021" + " status de la reserva " + " no"];
+        var reservacion5 = ["juan " + "mesa ", l + "fecha de la reserva ", " 12 / 21 / 2021" + " status de la reserva " + " no"];
+        var reservacion6 = ["juan " + "mesa ", m + "fecha de la reserva ", " 12 / 21 / 2021" + " status de la reserva " + " no"];
+        var reservaciones = ["las reservaciones son las sig: " +
+            reservacion2, reservacion3, reservacion4, reservacion5, reservacion6];
+        console.log(reservaciones);
+
+
+        var MesasOcopadas = [" las mesas ocupadas son: " +
+            mesaOcupada,", "+
+            l +" y "+ m];
+        console.log(MesasOcopadas);
+
+        var mesasDesocupadas = [" las mesas desocupadas son: " +
+            x + " y " + y];
+        console.log(mesasDesocupadas);
+
+        var reservarcionesConfirmadas = [" las reservaciones confirmadas son: " +
+            reservacion2 +" y "+reservacion3];
+
+        console.log(reservarcionesConfirmadas);
+
+    </script>
+
+</html>
